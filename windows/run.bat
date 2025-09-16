@@ -36,7 +36,6 @@ if errorlevel 1 (
     start /wait msiexec.exe /i "!KERNEL_MSI!" /quiet /norestart
     if exist "!KERNEL_MSI!" del /f /q "!KERNEL_MSI!"
 
-
     echo Setting WSL default version to 2...
     wsl --set-default-version 2 >nul 2>&1
 
